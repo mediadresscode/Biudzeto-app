@@ -1,11 +1,16 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-       Biudzeto App
+       <Header/>
       </header>
+      <footer className="App-footer">
+      <Footer/>
+      </footer>
     </div>
   );
 }
