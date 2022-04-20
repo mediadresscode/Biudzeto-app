@@ -1,11 +1,13 @@
 function Footer() {
     return ( 
         <div className="footer">
-            <a href="">APIE MUS |</a>
-            <a href="">KAIP NAUDOTIS |</a>
-            <a href="">TAISYKLĖS |</a>
-            <a href="">PRIVATUMO POLITIKA |</a>
-            <a href="">KONTAKTAI</a>
+            <ul className="ulClass">
+                <li><a href="">APIE MUS |</a></li>
+                <li><a href="">KAIP NAUDOTIS |</a></li>
+                <li><a href="">TAISYKLĖS |</a></li>
+                <li><a href="">PRIVATUMO POLITIKA |</a></li>
+                <li><a href="">KONTAKTAI</a></li>
+            </ul>
         </div>
      );
 }

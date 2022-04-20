@@ -16,6 +16,24 @@
 .header img{
   height: 180px;
 }
+.prisijungti{
+  display: inline-block;
+  padding: 10px 24px;
+  border: 2px solid black;
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+}
+.registruotis{
+  display: inline-block;
+  padding: 10px 24px;
+  border: 2px solid black;
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  background-color: hsl(216, 83%, 61%);
+}
 
 .footer {
   position: fixed;
@@ -34,4 +52,22 @@
   font-size: 25px;
   text-decoration:none;
   
+}
+
+.ulClass{
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+ display:inline-block;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
 }
