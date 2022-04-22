@@ -12,7 +12,7 @@ function App() {
       <header className="App-header">
        <Header/>
       </header>
-      <div>
+      <div className='Earns'>
       <h1>Pajamos</h1>
         <EarnsForm/>
       </div>
