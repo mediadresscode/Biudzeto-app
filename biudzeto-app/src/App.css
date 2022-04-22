@@ -1,0 +1,18 @@
+.Earns {
+    background-color: rgb(179, 202, 248);
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.btn {
+    border: 1px solid blue;
+    background-color: #fff;
+    border-radius: 8px;
+    color: rgb(57, 31, 224);
+    position: relative;
+    float: right;
+    padding: 3px;
+    top: -30px;
+}
