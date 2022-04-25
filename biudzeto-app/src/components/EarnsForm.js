@@ -41,13 +41,18 @@ function EarnsForm() {
         </div>
         <div>
           <label htmlFor="kategorija">Pasirinkite kategoriją</label>
-          <input
-          type="text"
+          <select
           id="kategorija"
             onChange={(e) => {
               setKategorija(e.target.value);
             }}
-          />
+          >
+            <option value="kategorija1">Kategorija 1</option>
+            <option value="kategorija2">Kategorija 2</option>
+            <option value="kategorija3">Kategorija 3</option>
+            <option value="kategorija4">Kategorija 4</option>
+            <option value="kategorija5">Kategorija 4</option>
+          </select>
         </div>
         <input type="submit" className="btn" value="Išsaugoti"></input>
       </form>
