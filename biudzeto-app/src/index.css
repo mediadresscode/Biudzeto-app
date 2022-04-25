@@ -1,9 +1,12 @@
 .header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr 0.05fr 0.5fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
   align-items: center;
-  width: 100%;
   margin: 0 auto; 
 }
+.div1 { grid-area: 1 / 1 / 2 / 6; }
 
 .header a {
   padding: 10px 24px;
@@ -14,7 +17,8 @@
   background-color: rgb(127, 156, 199);
 }
 .header img{
-  height: 180px;
+  height: 200px;
+  padding-left: 10%;
 }
 .prisijungti{
   display: inline-block;
@@ -75,7 +79,7 @@
 .ulClass{
 list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 25px;
   overflow: hidden;
 }
 
