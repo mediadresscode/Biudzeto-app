@@ -1,7 +1,9 @@
+import React from 'react';
 import './App.css';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import EarnsForm from "./components/EarnsForm";
+import RegistrationForm from './components/RegistrationForm'; 
 
 
 function App() {
