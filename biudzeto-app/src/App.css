@@ -4,24 +4,55 @@
     font-family: 'Ruda', sans-serif;
   }
 
+  .Costs {
+    display: flex;
+    background-color: rgb(248, 234, 179);
+    border-radius: 15px;
+    max-width: 600px;
+    max-height: 600px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
 .Earns {
+    display: flex;
     background-color: rgb(179, 202, 248);
     border-radius: 15px;
     max-width: 600px;
-    margin: 20px;
-    padding: 20px;
+    max-height: 600px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 .btn {
-    border: 1px solid #59ADFF;
+   float: right;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid blue;
     background-color: #fff;
     border-radius: 8px;
-    color: #59ADFF;
-    position: relative;
-    float: right;
+    color: rgb(57, 31, 224);
     padding: 3px;
-    top: -30px;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
+    
+   .input {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+       text-align: center;
+       border-radius: 10px;
+       font-size: 1.2rem;
+       font-weight: bold;
+       padding: 3px;
+   }
+   .page {
+       margin-left: 100px;
+   }
 
 .formBorder{
     display: flex;
