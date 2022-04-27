@@ -1,14 +1,14 @@
 import Footer from "./Footer";
 import Header from "./Header";
 
-function RegistrationForm() {
+function LoginForm() {
     return ( 
         <div className="loginForm">
             <Header/>
-            Registration FORM
+            Login FORM
             <Footer/>
         </div>
      );
 }
 
-export default RegistrationForm;
+export default LoginForm;

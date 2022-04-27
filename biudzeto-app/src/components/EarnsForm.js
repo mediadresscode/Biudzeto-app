@@ -17,8 +17,8 @@ function EarnsForm() {
   }
   
   return (
-    <>
-      <form onSubmit={handleSubmit}>
+    <div >
+      <form className="Earns" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="date">Data</label>
           <input
@@ -61,7 +61,7 @@ function EarnsForm() {
         <p>{suma}</p>
         <p>{kategorija}</p>
       </div>
-    </>
+    </div>
   );
 }
 export default EarnsForm;
