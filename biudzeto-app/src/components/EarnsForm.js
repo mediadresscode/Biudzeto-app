@@ -1,67 +1,61 @@
 import { useState } from "react";
+import { useHistory } from 'react-router-dom';
 
 function EarnsForm() {
   const [date, setDate] = useState("");
   const [suma, setSuma] = useState("");
   const [kategorija, setKategorija] = useState("");
-  const [earns, setEarns] = useState([]);
+ 
+  const history = useHistory();
 
-  function handleSubmit(e) {
-      e.preventDefault();
-    //   console.log('Data' + date);
-    //   console.log('Suma' + suma);
-    //   console.log('Kategorija' + kategorija);
-      let earn = { date, suma, kategorija }
-      setEarns([...earns, earn]);
-      console.log('earn' + JSON.stringify(earn));
-  }
-  
+   const handleSubmit = (e) => {
+    e.preventDefault();
+    const earn = { date, suma, kategorija };
+
+    fetch('http://localhost:8000/earns', {
+        method: 'POST',
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(earn)
+    }).then(() => {
+        console.log('New earn added');
+
+        history.push('/');
+    })
+}
+
   return (
-    <div >
-      <form className="Earns" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="date">Data</label>
-          <input
-            type="date"
-            id="date"
-            onChange={(e) => {
+    <div className="Earns row justify-content-center rewiew">
+          
+      <form  onSubmit={handleSubmit}>
+      <div><h1>Pajamos</h1>
+      <label htmlFor="date"></label>      
+          <input className="input" type="date" value={date}
+            required onChange={(e) => {
               setDate(e.target.value);
             }}
           />
-        </div>
-        <div className="label">
-          <label htmlFor="suma">Įveskite sumą</label>
-          <input
-            type="number"
-            id="number"
-            onChange={(e) => {
+           <label htmlFor="suma"></label>         
+          <input className="input" type="number" value={suma}
+            placeholder="Įveskite sumą"
+            required onChange={(e) => {
               setSuma(e.target.value);
             }}
           />
-        </div>
-        <div>
-          <label htmlFor="kategorija">Pasirinkite kategoriją</label>
-          <select
-          id="kategorija"
-            onChange={(e) => {
-              setKategorija(e.target.value);
-            }}
-          >
-            <option value="kategorija1">Kategorija 1</option>
-            <option value="kategorija2">Kategorija 2</option>
-            <option value="kategorija3">Kategorija 3</option>
-            <option value="kategorija4">Kategorija 4</option>
-            <option value="kategorija5">Kategorija 4</option>
+           <label htmlFor="kategorija"></label>         
+          <select className="input" value={kategorija} onChange={(e) => setKategorija(e.target.value)}>
+            <option value="kategorija">Pasirinkite kategoriją</option>
+            <option value="alga">Alga</option>
+            <option value="papildomi darbai">Papildomi darbai</option>
+            <option value="dovana">Dovana</option>
           </select>
-        </div>
-        <input type="submit" className="btn" value="Išsaugoti"></input>
+          </div>
+          <div><input type="submit" className="btn" value="Išsaugoti"></input>
+        <a className="btn" href="/EarnList.js" >Sąrašas</a></div>
       </form>
-      <div>
-        <p>{date}</p>
-        <p>{suma}</p>
-        <p>{kategorija}</p>
+   
       </div>
-    </div>
+      
   );
 }
+
 export default EarnsForm;
