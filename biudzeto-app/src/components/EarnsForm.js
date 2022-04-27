@@ -52,7 +52,7 @@ function EarnsForm() {
           <div><input type="submit" className="btn" value="Išsaugoti"></input>
         <a className="btn" href="/EarnList.js" >Sąrašas</a></div>
       </form>
-   
+            
       </div>
       
   );
