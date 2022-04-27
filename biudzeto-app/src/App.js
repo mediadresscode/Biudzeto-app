@@ -3,6 +3,11 @@ import './App.css';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import EarnsForm from "./components/EarnsForm";
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import IntroPage from './components/IntroPage';
+import HomePage from './components/HomePage';
+import LoginForm from './components/LoginForm';
+import RegistrationForm from './components/RegistrationForm';
 
 
 function App() {
@@ -10,17 +15,19 @@ function App() {
     <Router>
     <div className="App">
     <Switch>
-      <header className="App-header">
-       <Header/>
-      </header>
-      <div className='Earns'>
-      <h1>Pajamos</h1>
-        <EarnsForm/>
-      </div>
-      </Switch>
-      <footer className="App-footer">
-      <Footer/>
-      </footer>
+     <Route exact path="/">
+       <IntroPage/>
+     </Route>
+     <Route path="/HomePage">
+      <HomePage/>
+     </Route>
+     <Route path="/LoginForm">
+      <LoginForm/>
+     </Route>
+     <Route path="/RegistrationForm">
+      <RegistrationForm/>
+     </Route>
+     </Switch>
     </div>
     </Router>
   );
