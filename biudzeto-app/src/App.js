@@ -3,14 +3,13 @@ import './App.css';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import EarnsForm from "./components/EarnsForm";
-import RegistrationForm from './components/RegistrationForm'; 
 
 
 function App() {
   return (
-    <>
-   
+    <Router>
     <div className="App">
+    <Switch>
       <header className="App-header">
        <Header/>
       </header>
@@ -18,11 +17,12 @@ function App() {
       <h1>Pajamos</h1>
         <EarnsForm/>
       </div>
+      </Switch>
       <footer className="App-footer">
       <Footer/>
       </footer>
     </div>
-    </>
+    </Router>
   );
 }
 
