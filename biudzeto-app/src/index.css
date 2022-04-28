@@ -1,4 +1,4 @@
-.header {
+/*.header {
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.3fr 0.05fr 0.3fr;
 grid-column-gap: 0px;
@@ -92,4 +92,4 @@ li a {
   color: white;
   padding: 16px;
   text-decoration: none;
-}
+}*/
