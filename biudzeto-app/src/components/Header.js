@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 function Header() {
     return ( 
         <div className="header">
-            <img src="/images/SekuLogo.png" alt="" />
+            <a href='../'><img src="/images/SekuLogo.png" alt="" /></a>
             <div></div>
-            <button className='prisijungti'>PRISIJUNGTI</button>
+            <button className='prisijungti'><a href='../LoginForm'>PRISIJUNGTI</a></button>
             <div></div>
-            <button className='registruotis'>REGISTRUOTIS</button>
+            <button className='registruotis'><a href='../RegistrationForm'>REGISTRUOTIS</a></button>
             {/* <a className='a1' href="/"> PRISIJUNGTI </a>
             <a className='a2'href="/"> REGISTRUOTIS </a> */}
         </div>
