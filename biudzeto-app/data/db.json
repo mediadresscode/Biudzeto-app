@@ -1,0 +1,121 @@
+{
+    "earns": [
+      {
+        "date": "2022-04-20",
+        "suma": "10",
+        "kategorija": "alga",
+        "id": 1
+      },
+      {
+        "date": "2022-04-25",
+        "suma": "100",
+        "kategorija": "alga",
+        "id": 2
+      },
+      {
+        "date": "2022-04-25",
+        "suma": "1000",
+        "kategorija": "alga",
+        "id": 6
+      },
+      {
+        "date": "2022-04-25",
+        "suma": "100",
+        "kategorija": "alga",
+        "id": 10
+      },
+      {
+        "date": "2022-04-19",
+        "suma": "222",
+        "kategorija": "",
+        "id": 11
+      },
+      {
+        "date": "2022-04-18",
+        "suma": "300",
+        "kategorija": "",
+        "id": 12
+      },
+      {
+        "date": "2022-04-11",
+        "suma": "500",
+        "kategorija": "papildomi darbai",
+        "id": 13
+      },
+      {
+        "date": "2022-04-18",
+        "suma": "400",
+        "kategorija": "alga",
+        "id": 14
+      },
+      {
+        "date": "2022-04-26",
+        "suma": "70",
+        "kategorija": "dovana",
+        "id": 15
+      },
+      {
+        "date": "2022-04-27",
+        "suma": "222",
+        "kategorija": "alga",
+        "id": 16
+      },
+      {
+        "date": "2022-04-26",
+        "suma": "777",
+        "kategorija": "papildomi darbai",
+        "id": 19
+      }
+    ],
+    "costs": [
+      {
+        "date": "2022-04-27",
+        "suma": "500",
+        "pavadinimas": "maxima",
+        "kategorija": "gerimai",
+        "id": 1
+      },
+      {
+        "date": "2022-04-26",
+        "suma": "222",
+        "pavadinimas": "iki",
+        "kategorija": "maistas",
+        "id": 2
+      },
+      {
+        "date": "2022-04-28",
+        "suma": "111",
+        "pavadinimas": "neste",
+        "kategorija": "transportas",
+        "id": 3
+      },
+      {
+        "date": "2022-04-28",
+        "suma": "222",
+        "pavadinimas": "turkija",
+        "kategorija": "keliones",
+        "id": 4
+      },
+      {
+        "date": "2022-04-28",
+        "suma": "333",
+        "pavadinimas": "benu",
+        "kategorija": "sveikata",
+        "id": 5
+      },
+      {
+        "date": "2022-04-28",
+        "suma": "444",
+        "pavadinimas": "iki",
+        "kategorija": "maistas",
+        "id": 6
+      },
+      {
+        "date": "2022-04-28",
+        "suma": "777",
+        "pavadinimas": "turkija",
+        "kategorija": "keliones",
+        "id": 7
+      }
+    ]
+  }

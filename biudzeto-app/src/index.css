@@ -1,12 +1,12 @@
-/*.header {
+/* .header {
   display: grid;
   grid-template-columns: 0.5fr 2fr 0.3fr 0.05fr 0.3fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
   align-items: center;
   margin: 0 auto; 
-}
-.div1 { grid-area: 1 / 1 / 2 / 6; }
+} */
+/* .div1 { grid-area: 1 / 1 / 2 / 6; }
 
 .header a {
   padding: 10px 24px;
@@ -15,12 +15,12 @@ grid-row-gap: 0px;
   text-decoration: none;
   color: black;
   background-color: rgb(127, 156, 199);
-}
+} */
 .header img{
   height: 200px;
   padding-left: 10%;
 }
-.prisijungti{
+/* .prisijungti{
   display: inline-block;
   padding: 10px 24px;
   border: 2px solid black;
@@ -37,25 +37,10 @@ grid-row-gap: 0px;
   text-decoration: none;
   color: black;
   background-color: hsl(216, 83%, 61%);
-}
-.Earns {
-  background-color: rgb(179, 202, 248);
-  border-radius: 15px;
-  max-width: 600px;
-  margin: 20px;
-  padding: 20px;
-}
+} */
 
-.btn {
-  border: 1px solid blue;
-  background-color: #fff;
-  border-radius: 8px;
-  color: rgb(57, 31, 224);
-  position: relative;
-  float: right;
-  padding: 3px;
-  top: -30px;
-}
+
+
 
 .footer {
   position: fixed;
@@ -68,28 +53,28 @@ grid-row-gap: 0px;
   background-color: #be73ed;
 }
 
-.footer a {
+/* .footer a {
   padding: 5px;
   color: black;
   font-size: 25px;
   text-decoration:none;
   
-}
+} */
 
-.ulClass{
+/* .ulClass{
 list-style-type: none;
   margin: 0;
   padding: 25px;
   overflow: hidden;
-}
+} */
 
-li {
+/* li {
  display:inline-block;
-}
+} */
 
-li a {
+/* li a {
   display: block;
   color: white;
   padding: 16px;
   text-decoration: none;
-}*/
+} */
