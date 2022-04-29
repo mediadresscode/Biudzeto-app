@@ -1,12 +1,12 @@
-import Footer from "./Footer";
-import Header from "./Header";
+// import Footer from "./Footer";
+// import Header from "./Header";
 
 function LoginForm() {
     return ( 
         <div className="loginForm">
-            <Header/>
+            {/* <Header/> */}
             Login FORM
-            <Footer/>
+            {/* <Footer/> */}
         </div>
      );
 }

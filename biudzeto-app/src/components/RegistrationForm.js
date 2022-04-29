@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Footer from "./Footer";
-import Header from "./Header";
+// import Footer from "./Footer";
+// import Header from "./Header";
 
 function RegistrationForm() {
   // States for registration
@@ -72,7 +72,7 @@ function RegistrationForm() {
   return (
     <div className="RgPage">
       <div className="form">
-        <Header />
+        {/* <Header /> */}
         {/* Calling to the methods */}
         <div className="messages">
           {errorMessage()}
@@ -113,7 +113,7 @@ function RegistrationForm() {
           </button>
         </form>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

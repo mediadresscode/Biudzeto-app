@@ -60,6 +60,21 @@
 .page {
   margin-left: 100px;
 }
+.sek {
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-left: 40px;
+  text-align: center;
+}
+.taupyti {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #c835f1;
+  border-radius: 20px;
+  padding: 10px;
+  }
 
 .formBorder {
   display: flex;
