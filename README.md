@@ -1,7 +1,7 @@
 # Biudzeto-app
-# Getting Started with Create React App
+# Getting Started with Biudzeto App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/MariusZintikas/Biudzeto-app/).
 
 ## Available Scripts
 
@@ -18,7 +18,7 @@ You will also see any lint errors in the console.
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+See the section about [running tests](https://github.com/MariusZintikas/Biudzeto-app/) for more information.
 
 ### `npm run build`
 
@@ -28,7 +28,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+See the section about [deployment](https://github.com/MariusZintikas/Biudzeto-app/) for more information.
 
 ### `npm run eject`
 
@@ -42,30 +42,28 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can learn more in the [Biudzeto App documentation](https://github.com/MariusZintikas/Biudzeto-app/).
 
 ### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This section has moved here: [https://](https://github.com/MariusZintikas/Biudzeto-app/)
 
 ### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This section has moved here: [https://docs/analyzing-the-bundle-size](https://github.com/MariusZintikas/Biudzeto-app/)
 
 ### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This section has moved here: [https://docs/making-a-progressive-web-app](https://github.com/MariusZintikas/Biudzeto-app/)
 
 ### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This section has moved here: [https://docs/advanced-configuration](https://github.com/MariusZintikas/Biudzeto-app/)
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This section has moved here: [https://app/docs/deployment](https://github.com/MariusZintikas/Biudzeto-app/)
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://app/docs/troubleshooting#npm-run-build-fails-to-minify](https://github.com/MariusZintikas/Biudzeto-app/)
