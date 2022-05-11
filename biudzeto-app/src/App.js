@@ -11,6 +11,7 @@ import RegistrationForm from "./components/RegistrationForm";
 import CostsForm from "./components/CostsForm";
 import EarnList from "./components/EarnList";
 import CostList from "./components/CostList";
+import Edit from "./components/Edit";
 
 function App() {
   return (
@@ -42,6 +43,9 @@ function App() {
             </Route>
             <Route exact path="/CostList.js">
               <CostList />
+            </Route>
+            <Route path="/earns/edit/:id">
+              <Edit />
             </Route>
         </Switch>
       </div>
