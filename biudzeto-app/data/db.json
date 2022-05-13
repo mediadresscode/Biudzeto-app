@@ -1,30 +1,6 @@
 {
   "earns": [
     {
-      "date": "2022-04-20",
-      "suma": "10",
-      "kategorija": "alga",
-      "id": 1
-    },
-    {
-      "date": "2022-04-25",
-      "suma": "100",
-      "kategorija": "alga",
-      "id": 2
-    },
-    {
-      "date": "2022-04-25",
-      "suma": "1000",
-      "kategorija": "alga",
-      "id": 6
-    },
-    {
-      "date": "2022-04-25",
-      "suma": "100",
-      "kategorija": "alga",
-      "id": 10
-    },
-    {
       "date": "2022-04-19",
       "suma": "222",
       "kategorija": "",
@@ -59,6 +35,48 @@
       "suma": "222",
       "kategorija": "alga",
       "id": 16
+    },
+    {
+      "date": "2022-05-13",
+      "suma": "100",
+      "pavadinimas": "iki",
+      "id": 17
+    },
+    {
+      "date": "2022-05-13",
+      "suma": "456",
+      "pavadinimas": "iki",
+      "id": 18
+    },
+    {
+      "date": "2022-05-13",
+      "suma": "741",
+      "pavadinimas": "",
+      "id": 19
+    },
+    {
+      "date": "2022-05-13",
+      "suma": "855",
+      "pavadinimas": "",
+      "id": 20
+    },
+    {
+      "date": "2022-05-13",
+      "suma": "855",
+      "pavadinimas": "",
+      "id": 21
+    },
+    {
+      "date": "2022-05-13",
+      "suma": "855",
+      "pavadinimas": "",
+      "id": 22
+    },
+    {
+      "date": "2022-05-13",
+      "suma": "1.55",
+      "pavadinimas": "",
+      "id": 23
     }
   ],
   "costs": [

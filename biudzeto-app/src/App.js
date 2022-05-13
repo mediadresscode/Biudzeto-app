@@ -2,16 +2,18 @@ import React from "react";
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import EarnsForm from "./components/EarnsForm";
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import IntroPage from "./components/IntroPage";
-//import HomePage from "./components/HomePage";
+import HomePage from "./components/HomePage";
 import LoginForm from "./components/LoginForm";
 import RegistrationForm from "./components/RegistrationForm";
-import CostsForm from "./components/CostsForm";
+//import FrontPage from "./components/FrontPage";
+import EarnsForm from "./components/EarnsForm";
 import EarnList from "./components/EarnList";
 import CostList from "./components/CostList";
 import Edit from "./components/Edit";
+import CostsForm from "./components/CostsForm";
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
       <div className="App">
       <Header />  
       <Footer />
+      <div className="content">
         <Switch>
           <Route exact path="/">
             <IntroPage />
@@ -33,11 +36,16 @@ function App() {
             <RegistrationForm />
           </Route>
           <Route exact path="/EarnsForm.js">
-            <div className="page">
               <EarnsForm />
-              <CostsForm />
-            </div>
-          </Route>
+              <CostsForm/>
+            </Route>
+
+
+          {/* <Route exact path="/FrontPage">
+              
+              <FrontPage />
+              
+            </Route> */}
           <Route exact path="/EarnList.js">
               <EarnList />
             </Route>
@@ -48,6 +56,7 @@ function App() {
               <Edit />
             </Route>
         </Switch>
+      </div>
       </div>
     </Router>
   );

@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom'
 //import CostsForm from './CostsForm';
 import { useEffect, useState } from "react";
-// import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 function Cost({cost, index}) {
 
@@ -15,21 +15,27 @@ function Cost({cost, index}) {
 
     
 return (
-    <div className="costdelete row justify-content-center rewiew">
-                 
-                
-                    <div>
-                        <h2>{cost.date}</h2>
-                        <div>{cost.kategorija}</div>
-                        <div>{cost.pavadinimas}</div>
-                        <div>{cost.suma}</div>
-                        <button className='btn' onClick={handleDelete}>Delete</button>
-                        
-    
-                    </div>)
-            </div>
-    
-     
+    <tr className="sarasas">
+            <td>{index + 1}</td>
+            <td>{cost.date}</td>
+            <td>{cost.suma}</td>
+            <td>{cost.pavadinimas}</td>
+            <td>{cost.kategorija}</td>
+            <td>
+              <a href="">
+                <i id="siuksliadeze" class="fa fa-trash-o fa-lg"></i>
+              </a>
+              <button className="btn" onClick={handleDelete}>
+                Ištrinti
+              </button>
+            </td>
+
+            <td>
+              
+              
+            </td>
+          </tr>        
+                  
    
 );
 }

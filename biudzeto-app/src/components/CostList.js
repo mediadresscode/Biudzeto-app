@@ -13,7 +13,20 @@ function CostList() {
       .then((data) => setCosts(data));
   }, []);
   return (
-    <table>
+    <>
+    <h3>Išlaidų sąrašas</h3>
+      <div className="col-md-8">
+        <table className="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th width="10%">Eil. Nr.</th>
+              <th width="35%">Gavimo data</th>
+              <th width="20%">Suma</th>
+              <th width="35%">Pavadinimas</th>
+              <th width="35%">Kategorija</th>
+            </tr>
+          </thead>
+    
       <tbody>
         {
             costs.map((cost, index) => {
@@ -24,6 +37,8 @@ function CostList() {
 
       </tbody>
     </table>
+    </div>
+    </>
   );
 }
 
