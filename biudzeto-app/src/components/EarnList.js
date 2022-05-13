@@ -11,7 +11,22 @@ function EarnList() {
         .then((data) => setEarns(data));
     }, []);
     return (
-      <table>
+      <>
+      <h2>Pajamų sąrašas</h2>
+      <div className="col-md-8">
+      
+      <table className="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th width="10%">Eil. Nr.</th>
+            <th width="35%">Gavimo data</th>
+            <th width="20%">Suma</th>
+            <th width="35%">Pavadinimas</th>
+          </tr>
+        </thead>
+
+        
+      
         <tbody>
           {
               earns.map((earn, index) => {
@@ -22,6 +37,8 @@ function EarnList() {
   
         </tbody>
       </table>
+      </div>
+      </>
     );
   }
   

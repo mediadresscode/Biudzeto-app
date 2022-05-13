@@ -46,17 +46,18 @@ grid-row-gap: 0px;
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 100px;
+  height: 70px;
   text-align: center;
   width: 100%;
   margin: 0 auto;
   background-color: #be73ed;
+  
 }
 
 /* .footer a {
   padding: 5px;
   color: black;
-  font-size: 25px;
+  font-size: 20px;
   text-decoration:none;
   
 } */

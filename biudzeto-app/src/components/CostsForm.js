@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useHistory } from 'react-router-dom';
 
 function CostsForm() {
-  const [date, setDate] = useState("");
+  const [date, setDate] = useState("showTodayDate()");
   const [suma, setSuma] = useState("");
   const [pavadinimas, setPavadinimas] = useState("");
   const [kategorija, setKategorija] = useState("");
@@ -12,30 +12,44 @@ function CostsForm() {
     e.preventDefault();
     const cost = { date, suma, pavadinimas, kategorija };
 
+    function showTodayDate() {
+      let date = new Date();
+      let today = date.toISOString().slice(0, 10);
+      return today;
+    }
+  
+    function resetForm() {
+      setSuma("");
+      setPavadinimas("");
+    }
+
     fetch('http://localhost:8000/costs', {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(cost)
     }).then(() => {
-        console.log('New cost added');
+        alert('Išlaidas įvedėte sėkmingai');
+        resetForm();
 
         // history.go(-1);
-        history.push('/');
+       // history.push('/');
     })
 }
 
   return (
-    <div className="Costs row justify-content-center rewiew">
+    <div className="Costs">
       <form onSubmit={handleSubmit}>
-        <div><h1>Išlaidos</h1>
+        <div><h2>Išlaidos</h2>
         <label htmlFor="date"></label>
-           <input className="input" type="date" value={date}
+           <input id="today"
+           className="input" type="date" value={date}
               required onChange={(e) => {
               setDate(e.target.value);
             }}
           />
           <label htmlFor="suma"></label>       
-          <input className="input" type="number" value={suma}
+          <input className="input" type="number" min="0"
+            step="0.01" value={suma}
             placeholder="Įveskite sumą"
             required onChange={(e) => {
               setSuma(e.target.value);
@@ -50,7 +64,7 @@ function CostsForm() {
             }}
           />
         <label htmlFor="kategorija"></label>
-          <select className="input" value={kategorija} onChange={(e) => setKategorija(e.target.value)}>
+          <select className="input2" value={kategorija} onChange={(e) => setKategorija(e.target.value)}>
             <option value="kategorija">Pasirinkite kategoriją</option>
             <option value="maistas">Maistas</option>
             <option value="gerimai">Gėrimai</option>
@@ -59,6 +73,7 @@ function CostsForm() {
             <option value="sveikata">Sveikata</option>
             <option value="sportas">Sportas</option>
             <option value="keliones">Kelionės</option>
+            <option value="keliones">Kita</option>
           </select>
         </div>
         <div><input type="submit" className="btn" value="Išsaugoti"></input>
