@@ -75,13 +75,6 @@
   ],
   "costs": [
     {
-      "date": "2022-04-27",
-      "suma": "500",
-      "pavadinimas": "maxima",
-      "kategorija": "gerimai",
-      "id": 1
-    },
-    {
       "date": "2022-04-26",
       "suma": "222",
       "pavadinimas": "iki",
